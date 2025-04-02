@@ -2,11 +2,11 @@ const app = require("./app");
 const config = require("./app/config");
 const MongoDB = require("./app/utils/mongodb.util");
 
-//start server
-const POST = config.app.port;
-app.listen(POST, () => {
-    console.log(`Server is running on port ${POST}.`);
-});
+// //start server
+// const POST = config.app.port;
+// app.listen(POST, () => {
+//     console.log(`Server is running on port ${POST}.`);
+// });
 
 async function startServer() {
     try {
