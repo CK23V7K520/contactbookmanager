@@ -2,8 +2,6 @@ const ContactService = require("../services/contact.service");
 const MongoDB = require("../utils/mongodb.util");
 const ApiError = require("../api-error");
 
-const { message } = require("laravel-mix/src/Log");
-
 exports.create = (req, res) => {
     res.send({ message: "create handler" });
 };
