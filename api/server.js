@@ -1,16 +1,13 @@
 const app = require("./app");
 const config = require("./app/config");
 const MongoDB = require("./app/utils/mongodb.util");
-
-// //start server
-// const POST = config.app.port;
-// app.listen(POST, () => {
-//     console.log(`Server is running on port ${POST}.`);
-// });
+// require("dotenv").config();
 
 async function startServer() {
     try {
-        console.log(config.db?.uri);
+        console.log(uri);
+        console.log(process.env);
+        console.log(config.db.uri);
 
         await MongoDB.connect(config.db.uri);
         console.log("Connect to the database!");
